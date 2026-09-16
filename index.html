@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="index.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Noto+Serif+JP:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <img src="img/logonico.png" alt="サイト名のロゴ">
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">TOP</a></li>
+            <li><a href="works.html">WORKS</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="contact.html">✉</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- TOP -->
+<section id="top" class="hero">
+
+</section>
+
+<!-- WORKS -->
+<section id="works" class="works">
+
+    <div class="ribon-image">
+        <img src="img/ribon.png" alt="">
+    </div>
+
+    <h2>WORKS</h2>
+
+    <div class="works-grid">
+
+        <div class="work-card">
+
+          <img class="frame" src="img/sakuweaku.png" alt="">
+
+          <img class="work-img" src="noseru/donatu.png" alt="">
+
+            <span class="number">01</span>
+            <span class="bottom-text">Donut Time</span>
+        </div>
+
+        <div class="work-card">
+
+          <img class="frame" src="img/sakuweaku.png" alt="">
+
+          <img class="work-img" src="noseru/monaka.jpg" alt="もなか">
+
+            <span class="number">02</span>
+            <span class="bottom-text">Ginnanmonaka</span>
+        </div>
+
+        <div class="work-card">
+
+          <img class="frame" src="img/sakuweaku.png" alt="">
+
+          <img class="work-img" src="noseru/mitu.jpg" alt="">
+
+            <span class="number">03</span>
+            <span class="bottom-text">Honeyheart</span>
+        </div>
+
+        <div class="work-card">
+
+          <img class="frame" src="img/sakuweaku.png" alt="">
+
+          <img class="work-img" src="noseru/kousui.png" alt="香水">
+
+            <span class="number">04</span>
+            <span class="bottom-text">Blossom Eau</span>
+        </div>
+
+        <div class="work-card">
+
+          <img class="frame" src="img/sakuweaku.png" alt="">
+
+          <img class="work-img" src="noseru/me.png" alt="">
+
+            <span class="number">05</span>
+            <span class="bottom-text">ONE POINT</span>
+        </div>
+
+        <div class="work-card">
+
+          <img class="frame" src="img/sakuweaku.png" alt="">
+
+          <img class="work-img" src="noseru/mama.png" alt="">
+
+           <span class="number">06</span>
+            <span class="bottom-text">Kupukupu</span>
+        </div>
+
+    </div>
+
+    <a href="works.html" class="more">
+      <img src="img/more.png" alt="more">
+    </a>
+
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="about">
+
+     <div class="ribon-image">
+        <img src="img/ribon.png" alt="">
+    </div>
+
+    <h2>ABOUT</h2>
+
+    <div class="about-content">
+
+        <div class="about-image">
+            <img src="img/murasaki.png" alt="">
+        </div>
+
+        <div class="about-text">
+
+           <h3>
+            <ruby>
+              長谷川 にこ
+            <rt>Hasegawa Nico</rt>
+             </ruby>
+           </h3>
+
+            <p>
+                2006年生まれ、愛知県稲沢市出身。<br>
+                グラフィックデザイナーを目指すため、<br>
+                名古屋医療秘書福祉＆IT専門学校へ通う
+                専門学生です。
+            </p>
+        </div>
+
+    </div>
+
+    <a href="about.html" class="more">
+      <img src="img/more.png" alt="more">
+    </a>
+
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+
+     <div class="ribon-image">
+        <img src="img/ribon.png" alt="" >
+    </div>
+
+    <h2>CONTACT</h2>
+
+    <div class="contact-image">
+    <p>
+        お問い合わせは、Contactページ<br>
+        にてご利用できます。
+    </p>
+
+</div>
+
+  <a href="contact.html" class="contact-btn">Contact me</a>
+
+</section>
+
+<footer>
+
+    <div class="footer-logo">
+        <img src="img/thankyou.png" alt="ロゴ">
+    </div>
+
+
+    <p>© Hasegawa Nico</p>
+
+ <div class="sns">
+    <a href="#">
+        <img src="img/insuta1.png" alt="Instagram">
+    </a>
+
+    <a href="#">
+        <img src="img/line1.png" alt="line">
+    </a>
+</div>
+
+</footer>
+
+
+<div class="cursor"></div>
+
+<script>
+document.addEventListener("mousemove", function(e){
+    const cursor = document.querySelector(".cursor");
+    cursor.style.left = e.clientX + "px";
+    cursor.style.top = e.clientY + "px";
+});
+</script>
+
+
+
+</body>
+</html>

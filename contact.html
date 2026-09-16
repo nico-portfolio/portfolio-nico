@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="contact.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Noto+Serif+JP:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+     <div class="logo">
+        <img src="img/logonico.png" alt="サイト名のロゴ">
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">TOP</a></li>
+            <li><a href="works.html">WORKS</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="contact.html">✉</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="contact-top">
+
+    <div class="contact-hero">
+
+        <h1>Contact me</h1>
+
+        <img src="img/ribon.png" alt="">
+
+    </div>
+
+</section>
+
+
+<section class="contact-form">
+
+    <p class="contact-message">
+        ご相談やご質問など、下記フォームより<br>
+        お気軽にお問い合わせください。
+    </p>
+
+    <form>
+
+        <label>お名前</label>
+        <input type="text">
+
+        <label>メールアドレス</label>
+        <input type="email">
+
+        <label>お問い合わせ内容</label>
+        <textarea></textarea>
+
+        <button type="submit">
+            送信する
+        </button>
+
+    </form>
+
+</section>
+
+<footer>
+
+    <div class="footer-logo">
+        <img src="img/thankyou.png" alt="ロゴ">
+    </div>
+
+    <p>© Hasegawa Nico</p>
+
+ <div class="sns">
+    <a href="#">
+        <img src="img/insuta1.png" alt="Instagram">
+    </a>
+
+    <a href="#">
+        <img src="img/line1.png" alt="line">
+    </a>
+</div>
+
+</footer>
+<div class="cursor"></div>
+
+<script>
+document.addEventListener("mousemove", function(e){
+    const cursor = document.querySelector(".cursor");
+    cursor.style.left = e.clientX + "px";
+    cursor.style.top = e.clientY + "px";
+});
+</script>
+
+</body>
+</html>

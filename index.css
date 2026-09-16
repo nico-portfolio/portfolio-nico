@@ -1,0 +1,554 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:"Noto Serif JP", serif;
+    color:#6b4040;
+    background:#fff;
+}
+
+/* ------------------
+HEADER
+------------------- */
+
+header{
+    position:fixed;
+    top:0;
+    width:100%;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0px 60px;
+    background-image:url("img/mokomoko.png");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    height:130px;  /* ←超重要 */
+
+    z-index:100;
+}
+
+
+.logo img {
+    width: 120px;   /* 好きな大きさに変更 */
+    height: auto;
+    display: block;
+    position: relative;
+    left: -60px; /* 数字を大きくするとさらに左へ */
+    padding-top: 20px;
+}
+
+nav ul{
+    display:flex;
+    gap:40px;
+    list-style:none;
+}
+
+nav a{
+    text-decoration:none;
+    color:#6b4040;
+    font-weight:bold;
+}
+
+/* ------------------
+TOP
+------------------- */
+
+.hero{
+    width:100%;
+    height:100vh;
+
+    background:url("img/mein.png") center center/cover no-repeat;
+    margin-top: 70px;
+}
+
+
+.hero-text p{
+    font-size:1.5rem;
+}
+
+.hero-text h1{
+    font-size:5rem;
+    font-family:"Cormorant Garamond", serif;
+}
+
+.line{
+    width:200px;
+    height:2px;
+    background:#6b4040;
+    margin-top:20px;
+}
+
+/* ------------------
+TITLE
+------------------- */
+
+section h2{
+    text-align:center;
+    font-size:3rem;
+    margin-bottom:80px;
+    font-family:"Cormorant Garamond", serif;
+}
+
+/* ------------------
+WORKS
+------------------- */
+
+.works{
+    padding:120px 10%;
+    
+}
+
+.ribon-image{
+  text-align: center;
+  padding-bottom: 50px;
+ 
+  
+}
+
+.works-grid{
+    display:grid;
+    grid-template-columns:repeat(3,260px);
+
+    justify-content:center;
+
+    gap:60px;
+}
+
+.work-card{
+    height:260px;
+    background:url(img/marble.jpg);
+    background-size:cover;
+    border-radius:10px;
+    position:relative;
+    width:260px;
+}
+
+
+
+.frame{
+    width:100%;
+    display:block;
+}
+
+
+.work-img{
+    position:absolute;
+
+    top:23px;
+    left:55px;
+
+    width:150px;
+    height:150px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+}
+
+.work-card{
+    position:relative;
+    display:block;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.work-card:hover{
+    transform:scale(1.05);
+}
+
+
+
+.work-card .number {
+    position:absolute;
+    top:-15px;
+    right:-15px;
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    background:#b59b9b;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+
+
+
+.bottom-text {
+    position:absolute;
+    bottom:40px;       /* ←ここで高さ調整できる */
+    left:50%;
+    transform:translateX(-50%);
+    font-size:20px;
+    font-weight:bold;
+    color:#4d292e;
+    background:none;   /* 丸バッジの背景を消す */
+    width:auto;
+    height:auto;
+    white-space: nowrap;   /* ←これが一行固定の魔法！ */
+}
+
+.more{
+    display:block;
+    text-align:right;
+    margin-top:60px;
+}
+
+.more img{
+    width:250px; /* 好きなサイズ */
+    transition:0.3s;
+}
+
+.more img:hover{
+    transform:scale(1.1);
+}
+
+
+/* ------------------
+ABOUT
+------------------- */
+
+.about{
+    background:url(img/tere.png);
+    background-size:cover;
+    padding:200px 10%;
+}
+
+.about-content{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:100px;
+}
+
+.about-image img{
+    width:300px;
+}
+
+.about-text{
+    max-width:600px;
+}
+
+.about-text h3{
+    margin-bottom:30px;
+    font-size:32px;
+}
+
+.about-text rt{
+    font-size:17px;
+    color:#8a6d6d;
+    letter-spacing:1px;
+    padding-bottom: 10px;
+}
+
+.about-text p{
+    font-size:20px;
+    line-height:2;
+}
+
+/* ------------------
+CONTACT
+------------------- */
+
+.contact{
+    text-align:center;
+    padding:120px 10%;
+}
+ .contact-image{
+    width:700px;
+    height:600px;
+
+    margin:0 auto;
+
+    background-image:url("img/osara.png");
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:contain;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.contact-image p{
+    font-size:24px;
+    line-height:1.8;
+    color:#6b4040;
+    font-weight:500;
+}
+
+.contact p{
+    margin:40px 0;
+   
+}
+
+.contact-btn{
+    display:inline-block;
+    background:#7d4a4a;
+    color:white;
+    text-decoration:none;
+    transition:0.3s;
+    padding:15px 50px;
+    border-radius:999px;
+}
+
+.contact-btn:hover{
+    transform:scale(1.1);
+}
+
+/* ------------------
+FOOTER
+------------------- */
+
+footer{
+    padding:40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+}
+
+footer{
+    width:100%;
+    height:200px;
+    background-image:url("img/dairiseki.jpg");
+    background-size:cover;
+    background-position:center;
+}
+
+footer{
+    position:relative;
+    height:250px; /* 好きな高さ */
+}
+
+.footer-logo img {
+    width: 200px;   /* 好きなサイズに変更 */
+    height: auto;
+    padding-top: 50px;
+    margin-left: 10px;
+}
+
+
+footer p{
+    position:absolute;
+    bottom:20px;
+    left:50%;
+    transform:translateX(-50%);
+}
+
+.sns{
+    position:absolute;
+    right:30px;
+    bottom:40px;
+    display:flex;
+    gap:20px;
+}
+
+
+.sns{
+    display:flex;
+    gap:20px;
+}
+
+.sns img{
+    width:70px;
+    height:auto;
+    transition:0.3s;
+    object-fit:contain;
+}
+
+.sns img:hover{
+    transform:scale(1.1);
+}
+
+/* ==================
+スマホ
+================== */
+@media screen and (max-width: 768px){
+
+    /* header */
+    header{
+        padding:15px 20px;
+    }
+
+    nav ul{
+        gap:15px;
+        font-size:12px;
+    }
+
+    .logo{
+        width:45px;
+        height:45px;
+        font-size:12px;
+    }
+
+    /* TOP */
+
+    .hero{
+        flex-direction:column;
+        gap:30px;
+        text-align:center;
+        padding:100px 20px 60px;
+    }
+
+    .hero-image img{
+        width:80%;
+        max-width:320px;
+    }
+
+    .hero-text h1{
+        font-size:3rem;
+    }
+
+    .hero-text p{
+        font-size:1rem;
+    }
+
+    .line{
+        margin:20px auto;
+        width:150px;
+    }
+
+    /* title */
+
+    section h2{
+        font-size:2rem;
+        margin-bottom:50px;
+    }
+
+    /* WORKS */
+
+    .works{
+        padding:80px 20px;
+    }
+
+    .works-grid{
+        grid-template-columns:1fr 1fr;
+        gap:20px;
+    }
+
+    .work-card{
+        height:160px;
+    }
+
+    .work-card span{
+        width:45px;
+        height:45px;
+        font-size:14px;
+    }
+
+    /* ABOUT */
+
+    .about{
+        padding:80px 20px;
+    }
+
+    .about-content{
+        flex-direction:column;
+        gap:30px;
+        text-align:center;
+    }
+
+    .about-image img{
+        width:200px;
+    }
+
+    .about-text{
+        max-width:100%;
+    }
+
+    .about-text p{
+        line-height:1.8;
+        font-size:14px;
+    }
+
+    /* CONTACT */
+
+    .contact{
+        padding:80px 20px;
+    }
+
+    .contact img{
+        width:100%;
+    }
+
+    .contact-btn{
+        padding:12px 40px;
+    }
+
+    /* footer */
+
+footer{
+        flex-direction:column;
+        gap:15px;
+        text-align:center;
+    }
+
+.sns{
+    display:flex;
+    gap:20px;
+}
+
+.sns img{
+    width:20px;
+    height:auto;
+    transition:0.3s;
+    object-fit:contain;
+}
+
+.sns img:hover{
+    transform:scale(1.1);
+}
+}
+
+body {
+    animation: fadein 0.8s ease;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.fadein {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.8s ease;
+}
+
+.fadein.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.cursor {
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+
+    background: rgba(230, 214, 255, 0.8);
+    box-shadow:
+        0 0 10px rgba(218, 200, 255, 0.9),
+        0 0 30px rgba(255, 180, 220, 0.7),
+        0 0 40px rgba(255, 160, 210, 0.5);
+
+    backdrop-filter: blur(4px);
+    transition: 0.12s ease;
+}
+

@@ -1,0 +1,289 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:"Noto Serif JP", serif;
+    color:#6b4040;
+    background:#fff;
+}
+
+/* ------------------
+HEADER
+------------------- */
+
+header{
+    position:fixed;
+    top:0;
+    width:100%;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0px 60px;
+    background-image:url("img/mokomoko.png");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    height:130px;  /* ←超重要 */
+
+    z-index:100;
+}
+
+
+.logo img {
+    width: 120px;   /* 好きな大きさに変更 */
+    height: auto;
+    display: block;
+    position: relative;
+    left: -60px; /* 数字を大きくするとさらに左へ */
+    padding-top: 20px;
+}
+
+
+nav ul{
+    display:flex;
+    gap:40px;
+    list-style:none;
+}
+
+nav a{
+    text-decoration:none;
+    color:#6b4040;
+    font-weight:bold;
+}
+
+
+.contact-top{
+
+    height:650px;
+
+    background:url(img/osara.png) center/cover;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:800px;   /* ← 好きな大きさ */
+    margin-top: 50px;
+}
+
+
+.contact-hero{
+
+    text-align:center;
+
+}
+
+.contact-hero h1{
+
+    font-size:70px;
+
+    color:#7d4a4a;
+
+    margin-bottom:10px;
+
+}
+
+.contact-form{
+
+    background:url(img/tere.png);
+
+    background-size:cover;
+
+    padding:280px 0;
+
+}
+
+.contact-message{
+
+    text-align:center;
+
+    line-height:2;
+
+    margin-bottom:60px;
+
+}
+
+form{
+
+    width:500px;
+
+    margin:0 auto;
+
+}
+
+label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    color:#7d4a4a;
+
+}
+
+input{
+
+    width:100%;
+
+    height:45px;
+
+    border:none;
+
+    border-radius:30px;
+
+    padding:0 20px;
+
+    margin-bottom:30px;
+
+}
+
+textarea{
+
+    width:100%;
+
+    height:170px;
+
+    border:none;
+
+    border-radius:20px;
+
+    padding:20px;
+
+    resize:none;
+
+    margin-bottom:40px;
+
+}
+
+button{
+
+    display:block;
+
+    margin:0 auto;
+
+    border:none;
+
+    background:#7d4a4a;
+
+    color:white;
+
+    padding:15px 50px;
+
+    border-radius:999px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+button:hover{
+
+    transform:scale(1.05);
+
+}
+
+
+footer{
+    padding:40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-top: 80px;
+}
+
+footer{
+    width:100%;
+    height:200px;
+
+   
+    background-size:cover;
+    background-position:center;
+}
+
+footer{
+    position:relative;
+    height:200px; /* 好きな高さ */
+}
+
+footer p{
+    position:absolute;
+    bottom:20px;
+    margin-top: -10px;
+    left:50%;
+    transform:translateX(-50%);
+}
+
+.footer-logo img {
+    width: 200px;   /* 好きなサイズに変更 */
+    height: auto;
+    padding-top: 50px;
+    margin-left: 10px;
+}
+
+.sns{
+    position:absolute;
+    right:30px;
+    bottom:40px;
+
+    display:flex;
+    gap:20px;
+}
+
+
+.sns{
+    display:flex;
+    gap:20px;
+}
+
+.sns img{
+    width:70px;
+    height:auto;
+    transition:0.3s;
+    object-fit:contain;
+}
+
+.sns img:hover{
+    transform:scale(1.1);
+}
+
+body {
+    animation: fadein 0.8s ease;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.cursor {
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+
+    background: rgba(230, 214, 255, 0.8);
+    box-shadow:
+        0 0 10px rgba(218, 200, 255, 0.9),
+        0 0 30px rgba(255, 180, 220, 0.7),
+        0 0 40px rgba(255, 160, 210, 0.5);
+
+    backdrop-filter: blur(4px);
+    transition: 0.12s ease;
+}
